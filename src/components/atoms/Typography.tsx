@@ -111,3 +111,18 @@ export function BodyExtraSmall({
     />
   )
 }
+
+export function SectionHeader({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<'p'>) {
+  return (
+    <p
+      className={mergeClassName(
+        'text-xs uppercase tracking-[0.3em] text-zinc-500',
+        className,
+      )}
+      {...props}
+    />
+  )
+}
