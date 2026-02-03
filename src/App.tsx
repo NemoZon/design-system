@@ -1,4 +1,5 @@
 import { Button } from "./components/atoms/Button";
+import { Input } from "./components/atoms/Input";
 import {
   BodyExtraSmall,
   BodyLarge,
@@ -75,6 +76,18 @@ function App() {
               Button
             </Button>
           </div>
+        </section>
+        <section className="flex flex-col gap-6 border-t border-white/10 pt-10">
+          <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
+            Input
+          </p>
+          <Input
+            containerClassName="w-[400px]"
+            label="Email"
+            required
+            placeholder="example@gmail.com"
+            type="email"
+          />
         </section>
       </div>
     </main>
