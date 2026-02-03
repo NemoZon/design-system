@@ -10,6 +10,7 @@ import {
   H3,
   H4,
 } from "./components/atoms/Typography";
+import { SignInForm } from "./components/organisms/SignInForm";
 
 function App() {
   return (
@@ -88,6 +89,12 @@ function App() {
             placeholder="example@gmail.com"
             type="email"
           />
+        </section>
+        <section className="flex flex-col gap-6 border-t border-white/10 pt-10">
+          <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
+            Sign In Form
+          </p>
+          <SignInForm />
         </section>
       </div>
     </main>
