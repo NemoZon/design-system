@@ -11,6 +11,9 @@ import {
   H4,
 } from "./components/atoms/Typography";
 import { SignInForm } from "./components/organisms/SignInForm";
+import { SignInPage } from "./components/pages/SignInPage";
+import { ProductGrid } from "./components/organisms/ProductGrid";
+import { mockProducts } from "./utils/mockProducts";
 
 function App() {
   return (
@@ -95,6 +98,20 @@ function App() {
             Sign In Form
           </p>
           <SignInForm />
+        </section>
+        <section className="flex flex-col gap-6 border-t border-white/10 pt-10">
+          <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
+            Page
+          </p>
+          <div className="overflow-hidden rounded-lg border border-white/10">
+            <SignInPage className="min-h-0 py-10" contentClassName="gap-8" />
+          </div>
+        </section>
+        <section className="flex flex-col gap-6 border-t border-white/10 pt-10">
+          <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
+            Product Cards
+          </p>
+          <ProductGrid products={mockProducts} />
         </section>
       </div>
     </main>
