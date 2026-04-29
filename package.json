@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test:storybook": "vitest --project storybook",
+    "chromatic": "npx chromatic --project-token=chpt_d6e65e6dde45bed"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -19,22 +21,29 @@
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@storybook/addon-a11y": "^10.3.5",
+    "@storybook/addon-vitest": "^10.3.5",
     "@storybook/react-vite": "^10.3.5",
     "@tailwindcss/vite": "^4.1.18",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "@vitest/browser": "^4.1.5",
+    "@vitest/browser-playwright": "^4.1.5",
+    "@vitest/runner": "^4.1.5",
     "autoprefixer": "^10.4.24",
+    "chromatic": "^16.6.1",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "playwright": "^1.59.1",
     "postcss": "^8.5.6",
     "storybook": "^10.3.5",
     "tailwindcss": "^4.1.18",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vitest": "^4.1.5"
   }
 }
