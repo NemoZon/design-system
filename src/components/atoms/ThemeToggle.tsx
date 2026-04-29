@@ -1,4 +1,4 @@
-import { useTheme, type ThemeMode } from "../../providers/ThemeProvider";
+import { useTheme, type ThemeMode } from "../../providers/themeContext";
 
 const SunIcon = ({ className }: { className?: string }) => (
   <svg

@@ -1,17 +1,11 @@
 import * as React from "react";
-
-export type ThemeMode = "light" | "dark" | "system";
-export type ResolvedTheme = "light" | "dark";
-
-type ThemeContextValue = {
-  theme: ThemeMode;
-  resolvedTheme: ResolvedTheme;
-  setTheme: (theme: ThemeMode) => void;
-};
+import {
+  ThemeContext,
+  type ResolvedTheme,
+  type ThemeMode,
+} from "./themeContext";
 
 const STORAGE_KEY = "theme";
-
-const ThemeContext = React.createContext<ThemeContextValue | null>(null);
 
 const getSystemTheme = (): ResolvedTheme =>
   typeof window !== "undefined" &&
@@ -64,10 +58,4 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
-}
-
-export function useTheme() {
-  const ctx = React.useContext(ThemeContext);
-  if (!ctx) throw new Error("useTheme must be used inside ThemeProvider");
-  return ctx;
 }
