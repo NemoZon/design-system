@@ -3,8 +3,8 @@ import { FormField } from "../molecules/FormField";
 
 export function SignInForm() {
   return (
-    <form className="flex w-full flex-col gap-8">
-      <div className="flex flex-col gap-6">
+    <form className="flex w-full flex-col gap-6">
+      <div className="flex flex-col gap-4">
         <FormField
           label="Email"
           required
@@ -18,7 +18,7 @@ export function SignInForm() {
           type="password"
         />
       </div>
-      <Button className="w-full" size="lg" variant="solid" type="submit">
+      <Button className="w-full" size="md" variant="solid" type="submit">
         Sign In
       </Button>
     </form>

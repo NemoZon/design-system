@@ -27,7 +27,7 @@ export function Input({
       {label ? (
         <label
           className={mergeClassName(
-            "text-2xl font-light tracking-wide text-white flex",
+            "flex tracking-wide text-white",
             labelClassName,
           )}
           htmlFor={inputId}
@@ -42,7 +42,7 @@ export function Input({
         id={inputId}
         required={required}
         className={mergeClassName(
-          "h-10 w-full border border-white/70 bg-transparent px-4 text-xl font-light tracking-wide text-white placeholder:text-zinc-500 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/40",
+          "h-10 w-full border border-white/70 bg-transparent px-3 text-sm font-light tracking-wide text-white placeholder:text-zinc-500 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/40",
           className,
         )}
         {...props}

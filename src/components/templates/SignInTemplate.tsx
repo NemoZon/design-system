@@ -26,13 +26,11 @@ export function SignInTemplate({
     >
       <div
         className={mergeClassName(
-          "mx-auto flex w-full max-w-xl flex-col gap-10",
+          "mx-auto flex w-full max-w-md flex-col gap-8",
           contentClassName,
         )}
       >
-        <H2 className="text-4xl font-light text-white sm:text-5xl">
-          {title}
-        </H2>
+        <H2 className="text-white">{title}</H2>
         {children}
       </div>
     </main>

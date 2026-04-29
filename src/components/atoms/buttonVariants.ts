@@ -1,8 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority'
-import { typography } from './typographyStyles'
 
 export const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-none border tracking-wide transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-none border font-light tracking-wide leading-none transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
@@ -12,9 +11,9 @@ export const buttonVariants = cva(
           'border-white bg-white text-black hover:bg-zinc-100 focus-visible:ring-black focus-visible:ring-offset-white',
       },
       size: {
-        sm: `h-10 px-6 ${typography.bodySmall}`,
-        md: `h-12 px-10 ${typography.bodyMedium}`,
-        lg: `h-16 px-14 ${typography.bodyLarge}`,
+        sm: 'h-8 px-3 text-xs',
+        md: 'h-10 px-5 text-sm',
+        lg: 'h-12 px-7 text-base',
       },
     },
     defaultVariants: {

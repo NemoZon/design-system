@@ -17,13 +17,13 @@ export function ProductCard({ product }: ProductCardProps) {
           loading="lazy"
         />
       </div>
-      <div className="flex flex-1 flex-col gap-3 p-5">
+      <div className="flex flex-1 flex-col gap-3 p-4">
         <div className="flex items-start justify-between gap-3">
-          <H4 className="text-lg font-light text-white">{product.name}</H4>
+          <H4 className="text-base text-white sm:text-base">{product.name}</H4>
           <span className="text-sm text-zinc-300">{product.price}</span>
         </div>
         <BodySmall className="text-zinc-400">{product.description}</BodySmall>
-        <div className="mt-auto">
+        <div className="mt-auto pt-2">
           <Button className="w-full" size="sm" variant="outline">
             Add to cart
           </Button>
