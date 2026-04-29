@@ -20,7 +20,7 @@ export function SignInTemplate({
   return (
     <main
       className={mergeClassName(
-        "min-h-screen bg-zinc-950 px-6 py-16 text-white",
+        "min-h-screen bg-white px-6 py-16 text-zinc-900 transition-colors dark:bg-zinc-950 dark:text-white",
         className,
       )}
     >
@@ -30,7 +30,7 @@ export function SignInTemplate({
           contentClassName,
         )}
       >
-        <H2 className="text-white">{title}</H2>
+        <H2 className="text-zinc-900 dark:text-white">{title}</H2>
         {children}
       </div>
     </main>

@@ -12,7 +12,7 @@ import {
 export function TypographyShowcase() {
   return (
     <section className="grid gap-12 lg:grid-cols-2">
-      <div className="flex flex-col justify-end gap-6 text-zinc-200">
+      <div className="flex flex-col justify-end gap-6 text-zinc-700 dark:text-zinc-200">
         <BodyLarge>Body-large</BodyLarge>
         <BodyMedium>Body-medium</BodyMedium>
         <BodySmall>Body-small</BodySmall>

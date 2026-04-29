@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: "DM Serif Display";
   src:
@@ -43,6 +45,11 @@
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   color: #0b1224;
   background-color: #f5f6fb;
+}
+
+:root.dark {
+  color: #ffffff;
+  background-color: #09090b;
 }
 
 body {

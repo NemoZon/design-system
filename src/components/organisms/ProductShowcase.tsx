@@ -8,7 +8,7 @@ export type ProductShowcaseProps = {
 
 export function ProductShowcase({ products }: ProductShowcaseProps) {
   return (
-    <section className="flex flex-col gap-6 border-t border-white/10 pt-10">
+    <section className="flex flex-col gap-6 border-t border-zinc-200 dark:border-white/10 pt-10">
       <SectionHeader title="Product Cards" />
       <ProductGrid products={products} />
     </section>
